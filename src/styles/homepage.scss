@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus+Slab&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cerna: rgb(16, 16, 16, 1);
+    --seda: rgb(32, 31, 31, 1);
+    --modra: rgba(4, 208, 239, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--cerna);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.Navbar{
+  background-color: var(--seda);
+  height: 10vh;
+  width: 50.26vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+  border-radius: 20px;
+  overflow: visible;
+}
+
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  width: 49vw;
+  border-radius: 18px;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  gap: 80px;
+}
+
+.Navbar nav ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+  display: inline-block;
+  padding: 10px 17px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Navbar nav ul li a:hover {
+  background-color:rgba(255, 255, 255, 0.112);
+  border-radius: 4px;
+
+}

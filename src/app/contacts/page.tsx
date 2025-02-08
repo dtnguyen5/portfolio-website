@@ -1,9 +1,8 @@
-import "../styles/homepage.scss"
-import Navbar from "../components/navbar"
+import Navbar from "../../components/navbar"
 import Image from "next/image";
 
 
-const Homepage = async () => {
+const contacts = async () => {
 
   await new Promise ((resolve) => setTimeout(resolve, 100));
   
@@ -17,4 +16,4 @@ const Homepage = async () => {
 
   );
 } 
-export default Homepage;
+export default contacts;
