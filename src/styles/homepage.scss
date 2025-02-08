@@ -12,11 +12,18 @@
   box-sizing: border-box;
 }
 
-body{
+.main-content{
   background-color: var(--cerna);
   height: 100vh;
-  display: flex;
-  justify-content: center;
+}
+
+// <-----------------------------Navbar----------------------------->
+
+.nav-content{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .Navbar{
@@ -32,7 +39,6 @@ body{
   border-radius: 20px;
   overflow: visible;
 }
-
 
 nav{
   display: flex;
@@ -52,16 +58,56 @@ nav ul{
 .Navbar nav ul li a {
   text-decoration: none;
   font-size: 1.5em;
+  line-height: 40px;
   color: white;
   display: inline-block;
   padding: 10px 17px;
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 
 .Navbar nav ul li a:hover {
   background-color:rgba(255, 255, 255, 0.112);
   border-radius: 4px;
+  font-size: 1.7em;
+  transition: all 150ms linear;
+  color: var(--modra);
+}
 
+// <-----------------------------Navbar----------------------------->
+
+
+.text-content-main {
+    display: flex;
+    min-height: 85vh;
+    width: 50vw;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+
+h1 {
+    color: white;
+    font-size: 4em;
+}
+
+h2 {
+    color: var(--modra);
+    font-size: 2.5em;
+    text-align: center;
+    width: 100%; 
+}
+
+.content-obsah {
+    color: white;
+    width: 48%; 
+    text-align: left    ;
+    margin-top: 20px; 
 }

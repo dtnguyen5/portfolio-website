@@ -4,7 +4,6 @@ import Link from "next/link";
 import "../styles/homepage.scss";
 import { usePathname } from "next/navigation"; 
 import Image from "next/image";
-import { link } from "fs";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -15,6 +14,9 @@ const Navbar = () => {
     { label: "Ceny", href: "/prices" },
     { label: "Kontakty", href: "/contacts" },
   ];
+
+  console.log("Aktuální pathname:", pathname);
+
 
   return (
 
@@ -39,6 +41,9 @@ const Navbar = () => {
                 </span>
                 
               </Link>
+
+              {pathname === link.href && (
+                    <span className="absolute left-0 bottom-[-5px] w-full h-[4px] bg-[#1D8DCD] rounded-full"></span>)}
 
             </li>
 
