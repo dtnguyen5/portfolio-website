@@ -15,41 +15,36 @@ const Navbar = () => {
     { label: "Kontakty", href: "/contacts" },
   ];
 
-  console.log("Aktuální pathname:", pathname);
-
-
   return (
 
     <div className="Navbar">
 
       <nav>
+        
+          <ul>
 
-        <ul>
+            {navLinks.map((link) => (
 
-          {navLinks.map((link) => (
-
-            <li key={link.label} className="relative" >
-
-              <Link href={link.href}>
+              <li
+                key={link.label}
+                className={`link-item ${pathname === link.href ? "active" : ""}`}
+              >
                 
-                <span className={`${
-                    pathname === link.href ? "text-[#04D0EF] " : "text-white"
-                    }`}>
+                <Link href={link.href}>
 
-                  {link.label}
+                  <span className={`link__text ${pathname === link.href ? "active" : ""}`}>
+                    {link.label}
+                  </span>
 
-                </span>
-                
-              </Link>
+                </Link>
 
-              {pathname === link.href && (
-                    <span className="absolute left-0 bottom-[-5px] w-full h-[4px] bg-[#1D8DCD] rounded-full"></span>)}
+                <span className="link__underline"></span>
+              
+              </li>
 
-            </li>
+            ))}
 
-          ))}
-
-        </ul>
+          </ul>
 
       </nav>
 

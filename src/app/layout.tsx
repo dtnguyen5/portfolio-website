@@ -1,9 +1,8 @@
-import { Navbar } from "react-bootstrap";
 import "../styles/homepage.scss";
 
 
 export const metadata = {
-  title: "My Next.js App",
+  title: "Nguyen Duy Tiep",
   description: "Web vytvořený pomocí Next.js",
 };
 
@@ -15,9 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="background">
-
-        {children}
-
+        {children} 
       </body>
     </html>
   );
