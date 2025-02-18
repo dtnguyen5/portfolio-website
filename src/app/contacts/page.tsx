@@ -8,7 +8,7 @@ const contacts = async () => {
   
   return(
 
-      <Navbar />
+     <div></div>
 
 
 

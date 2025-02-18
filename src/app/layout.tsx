@@ -1,4 +1,5 @@
 import "../styles/homepage.scss";
+import Navbar from "@/components/navbar";
 
 
 export const metadata = {
@@ -14,7 +15,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="background">
-        {children} 
+
+        <div className="main-content">
+
+          <div className="nav-content">
+
+            <Navbar />
+
+          </div>
+            
+            {children} 
+
+        </div>
+
       </body>
     </html>
   );

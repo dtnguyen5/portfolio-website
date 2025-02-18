@@ -1,6 +1,6 @@
 import "../styles/homepage.scss"
-import Navbar from "../components/navbar"
 import Button from "../components/button"
+import Icons from "../components/buttonIcons"
 import Image from "next/image";
 
 
@@ -9,14 +9,6 @@ const Homepage = async () => {
   await new Promise ((resolve) => setTimeout(resolve, 100));
   
   return(
-
-    <div className="main-content">
-
-      <div className="nav-content">
-
-        <Navbar />
-
-      </div>
 
       <main>
 
@@ -53,10 +45,37 @@ const Homepage = async () => {
 
         </div>
 
+        <div className="Profile-content">
+
+          <div className="Profile">
+
+            <div className="Profile-place">
+
+              <div className="Profile-circle"></div>
+
+            </div>
+
+            <div className="Profile-name">
+
+              <h2>Nguyen Duy Tiep</h2>
+
+            </div>
+
+            <div className="Social-media-icons">
+
+              <div>
+
+                <Icons label="instagram" target=""/>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </main>
-
-    </div>
-
 
   );
 } 

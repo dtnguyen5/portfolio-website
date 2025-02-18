@@ -8,7 +8,7 @@ const prices = async () => {
   
   return(
 
-      <Navbar />
+      <div></div>
 
 
 

@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: var(--cerna);
+  height: 100vh;
+}
+
 .main-content{
   background-color: var(--cerna);
   height: 100vh;
@@ -84,8 +89,12 @@ nav ul{
     transition: color 150ms linear;
 
     &.active {
-      color: var(--modra); 
+      color: var(--modra);
     }
+  }
+
+  &:hover .link__text {  
+    color: var(--modra);
   }
 
   .link__underline {
@@ -106,6 +115,7 @@ nav ul{
 }
 
 
+
 // <-----------------------------Navbar----------------------------->
 
 
@@ -114,6 +124,7 @@ nav ul{
 
 main{
   width: 100%;
+  display: flex;
 }
 
 .text-content-main {
@@ -215,3 +226,77 @@ h2 {
 
 
 // <-----------------------------Buttons----------------------------->
+
+
+// <-----------------------------Profil-content----------------------------->
+
+.Profile-content{
+  display: flex;
+  min-height: 85vh;
+  width: 48vw;
+  justify-content: center;
+  align-items: start;
+}
+
+.Profile{
+  min-height: 78vh;
+  min-width: 30.5vw;
+  border-radius: 50px ;
+  background-color: var(--seda);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 35px;
+  top: 25px;
+
+  .Profile-place{
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+
+
+    .Profile-circle{
+      height: 40vh;
+      width: 20vw;
+      border-radius: 50%;
+      background-color: var(--cerna);
+      border: 2px solid var(--modra);
+    }
+  
+  }
+
+  .Profile-name{
+    width: 30vw;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Social-media-icons{
+    height: 8.5vh;
+    width: 24.17vw;
+    background-color: var(--cerna);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .i-icon{
+      height: 5.625vh;
+      width: 4vw;
+      color: white;
+      transition: ease-out 300ms ;
+
+      &:hover{
+        color: var(--modra);
+      }
+    }
+  }
+}
+
+// <-----------------------------Profil-content----------------------------->
