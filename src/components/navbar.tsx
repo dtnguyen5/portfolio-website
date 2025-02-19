@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import "../styles/homepage.scss"
 
 const Navbar = () => {
   // useState pro uchovávání aktuální cesty

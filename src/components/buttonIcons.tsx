@@ -16,7 +16,7 @@ const ButtonIcons: React.FC<ButtonIconsProps> = ({ label, target }) => {
     <a href={target} className="button-icon ">
 
         <FontAwesomeIcon icon={faInstagram} className="i-icon"/>
-        <FontAwesomeIcon icon={faSquareXTwitter} className="i-icon" />
+        <FontAwesomeIcon icon={faSquareXTwitter}  />
         
     </a>
 
