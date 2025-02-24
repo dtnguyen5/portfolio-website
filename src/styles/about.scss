@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus+Slab&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cerna: rgb(16, 16, 16, 1);
+    --seda: rgb(32, 31, 31, 1);
+    --modra: rgba(4, 208, 239, 1);
+}
+
+.Section1{
+    height: 100vh;
+}
+
+// <-----------------------------Profile----------------------------->
+
+.Profile-About-Page{
+    height: 85vh;
+    width: 43vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Circle{
+    height: 56vh;
+    width: 28.23vw;
+    background-color: var(--seda);
+    border-radius: 50%;
+    border: 2px solid var(--modra);
+}
+
+// <-----------------------------Profile----------------------------->
+
+
+// <-----------------------------Profile-obsah----------------------------->
+
+.About-Obsah{
+    height: 85vh;
+    width: 57vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.Nadpis{
+    height: 15vh;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.Nadpis h1{
+    color: var(--modra);
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+}
+
+.About-text{
+    height: 45vh;
+    width: 86%;
+
+    h2{
+        color: white;
+        text-align: left;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+        margin-bottom: 5px;
+    }
+
+     p{
+        color: white;
+        text-align: left;
+        font-size: 1.10rem;
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+        width: 83%;
+    }
+}
+
+// <-----------------------------Profile-obsah----------------------------->

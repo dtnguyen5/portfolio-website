@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "../styles/homepage.scss"
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 const Navbar = () => {
   // useState pro uchovávání aktuální cesty
@@ -14,6 +15,7 @@ const Navbar = () => {
     setActiveLink(pathname); // Uloží aktuální cestu do state
   }, [pathname]); // Efekt se spustí při změně pathname
 
+  const isMobile = useMediaQuery("(max-width: 768px)");
   const navLinks: { label: string; href: string }[] = [
     { label: "Domů", href: "/" },
     { label: "O mně", href: "/about" },
@@ -23,7 +25,7 @@ const Navbar = () => {
 
   return (
 
-    <div className="Navbar">
+    <div className={`Navbar ${isMobile ? "mobile-nav" : "desktop-nav"}`}>
 
       <nav>
 
@@ -34,7 +36,7 @@ const Navbar = () => {
             <li
               key={link.label}
               className={`link-item ${activeLink === link.href ? "active" : ""}`}
-            >
+              >
 
               <Link href={link.href}>
 

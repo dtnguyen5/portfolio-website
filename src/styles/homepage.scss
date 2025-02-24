@@ -12,15 +12,11 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: var(--cerna);
-  height: 100vh;
-}
 
 .main-content{
   background-color: var(--cerna);
   height: 100vh;
-  max-width: 100%;
+  width: 100%;
 }
 
 // <-----------------------------Navbar----------------------------->
@@ -114,10 +110,7 @@ nav ul{
   }
 }
 
-
-
 // <-----------------------------Navbar----------------------------->
-
 
 
 // <-----------------------------Text-conntent----------------------------->
@@ -185,7 +178,6 @@ h2 {
 // <-----------------------------Text-conntent----------------------------->
 
 
-
 // <-----------------------------Buttons----------------------------->
 
 .Buttons{
@@ -223,7 +215,6 @@ h2 {
   }
 
 }
-
 
 // <-----------------------------Buttons----------------------------->
 
@@ -271,26 +262,40 @@ h2 {
 
   .Profile-name{
     width: 30vw;
-    height: 18vh;
+    height: 16vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .Social-media-icons{
-    height: 8.5vh;
+    height: 9.6vh;
     width: 24.17vw;
     background-color: var(--cerna);
-    border-radius: 18px;
+    border-radius: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .Icons{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-icon{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
 
     .i-icon{
       height: 5.625vh;
       width: 4vw;
       color: white;
       transition: ease-out 300ms ;
+
 
       &:hover{
         color: var(--modra);
@@ -300,3 +305,24 @@ h2 {
 }
 
 // <-----------------------------Profil-content----------------------------->
+
+
+// <-----------------------------Responsive for mobile----------------------------->
+
+@media (max-width: 768px) {
+  .Navbar {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .Navbar .link-item {
+    font-size: 1.2em;
+  }
+}

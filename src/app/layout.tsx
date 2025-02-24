@@ -3,9 +3,27 @@ import Navbar from "@/components/navbar";
 
 
 export const metadata = {
-  title: "Nguyen Duy Tiep",
-  description: "Web vytvořený pomocí Next.js",
+  title: "Nguyen Duy Tiep - Portfolio",
+  description: "Jsem frontend developer specializující se na React a Next.js.",
+  keywords: ["Portfolio", "Nguyen Duy Tiep", "Next.js", "React", "Web Developer"],
+  authors: [{ name: "Nguyen Duy Tiep", url: "" }],
+  openGraph: {
+    title: "Nguyen Duy Tiep - Portfolio",
+    description: "Jsem frontend developer specializující se na React a Next.js.",
+    url: "",
+    siteName: "Nguyen Duy Tiep Portfolio",
+    images: [
+      {
+        url: "https://tvujweb.cz/og-image.jpg", // Dej sem svůj obrázek
+        width: 1200,
+        height: 630,
+        alt: "Nguyen Duy Tiep - Portfolio",
+      },
+    ],
+    type: "website",
+  },
 };
+
 
 export default function RootLayout({
   children,

@@ -63,9 +63,9 @@ const Homepage = async () => {
 
             <div className="Social-media-icons">
 
-              <div>
+              <div className="Icons">
 
-                <Icons label="instagram" target=""/>
+                <Icons label="" target=""/>
 
               </div>
 
