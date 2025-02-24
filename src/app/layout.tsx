@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Nguyen Duy Tiep Portfolio",
     images: [
       {
-        url: "https://tvujweb.cz/og-image.jpg", // Dej sem svůj obrázek
+        url: "https://tvujweb.cz/og-image.jpg", 
         width: 1200,
         height: 630,
         alt: "Nguyen Duy Tiep - Portfolio",
