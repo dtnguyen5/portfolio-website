@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus+Slab&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
-    --cerna: rgb(16, 16, 16, 1);
-    --seda: rgb(32, 31, 31, 1);
-    --modra: rgba(4, 208, 239, 1);
-}
+$modra:rgba(4, 208, 239, 1);
+$seda:rgb(32, 31, 31, 1);
+$cerna: rgb(16, 16, 16, 1);
 
 * {
   margin: 0;
@@ -14,108 +12,14 @@
 
 
 .main-content{
-  background-color: var(--cerna);
+  background-color: $cerna;
   height: 100vh;
   width: 100%;
 }
 
-// <-----------------------------Navbar----------------------------->
-
-.nav-content{
-    height: 15vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.Navbar{
-  background-color: var(--seda);
-  height: 10vh;
-  width: 50.26vw;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 20px;
-  z-index: 1000;
-  border-radius: 20px;
-  overflow: visible;
-}
-
-nav{
-  display: flex;
-  justify-content: center;
-  height: 8vh;
-  width: 49vw;
-  border-radius: 18px;
-}
-
-nav ul{
-  list-style-type: none;
-  display: flex;
-  gap: 80px;
-}
-
-.Navbar nav ul li a {
-  text-decoration: none;
-  font-size: 1.5em;
-  line-height: 40px;
-  color: white;
-  display: inline-block;
-  padding: 10px 17px;
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: normal;
-  cursor: pointer;
-
-  &:hover {
-    background-color:rgba(255, 255, 255, 0.112);
-    border-radius: 4px;
-    font-size: 1.7em;
-    transition: all 150ms linear;
-  }
-}
-
-.link-item {
-  position: relative;
-  height: 50px;
-
-  .link__text {
-    color: white;
-    transition: color 150ms linear;
-
-    &.active {
-      color: var(--modra);
-    }
-  }
-
-  &:hover .link__text {  
-    color: var(--modra);
-  }
-
-  .link__underline {
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 4px;
-    background-color: var(--modra);
-    border-radius: 50px;
-    display: none;
-    transition: display 150ms linear;
-  }
-
-  &.active .link__underline {
-    display: block;
-  }
-}
-
-// <-----------------------------Navbar----------------------------->
-
-
 // <-----------------------------Text-conntent----------------------------->
 
-main{
+.Main{
   width: 100%;
   display: flex;
 }
@@ -147,7 +51,7 @@ h1 {
 }
 
 h2 {
-    color: var(--modra);
+    color: $modra;
     font-size: 2.3em;
     text-align: center;
     width: 70%;
@@ -204,14 +108,14 @@ h2 {
   font-weight: 390;
   font-style: normal;
   text-align: center;
-  background-color: var(--seda);
+  background-color: $seda;
   border-radius: 50px;
-  border: 3px solid var(--modra);
+  border: 3px solid $modra;
   cursor: pointer;
   transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
 
   &:hover{
-    background-color: var(--modra);
+    background-color: $modra;
   }
 
 }
@@ -233,7 +137,7 @@ h2 {
   min-height: 78vh;
   min-width: 30.5vw;
   border-radius: 50px ;
-  background-color: var(--seda);
+  background-color: $seda;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -247,15 +151,15 @@ h2 {
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 50px;
+    margin-top: 52px;
 
 
-    .Profile-circle{
-      height: 40vh;
-      width: 20vw;
-      border-radius: 50%;
-      background-color: var(--cerna);
-      border: 2px solid var(--modra);
+    .Profile-picture{
+      height: 38vh;
+      width: 19vw;
+      border-radius: 10%;
+      background-color: $cerna;
+      border: 2px solid $modra;
     }
   
   }
@@ -269,25 +173,25 @@ h2 {
   }
 
   .Social-media-icons{
-    height: 9.6vh;
+    height: 9.5vh;
     width: 24.17vw;
-    background-color: var(--cerna);
+    background-color: $cerna;
     border-radius: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .Icons{
+    .button-icons{
       width: 100%;
       display: flex;
       justify-content: center;
+      gap: 25px;  
     }
 
     .button-icon{
       width: 100%;
       display: flex;
       justify-content: center;
-      gap: 25px;
     }
 
     .i-icon{
@@ -298,7 +202,7 @@ h2 {
 
 
       &:hover{
-        color: var(--modra);
+        color: $modra;
       }
     }
   }

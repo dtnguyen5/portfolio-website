@@ -1,5 +1,7 @@
 import Navbar from "../../components/navbar"
 import Image from "next/image";
+import { FormProvider } from "@/providers/FormProvider"; 
+import ContactForm from "@/components/contactForm"; 
 
 
 const contacts = async () => {
@@ -8,9 +10,11 @@ const contacts = async () => {
   
   return(
 
-     <div></div>
-
-
+    {/* // použiti jeste ne
+    <FormProvider>
+    <ContactForm />
+    </FormProvider>
+    */}
 
 
 

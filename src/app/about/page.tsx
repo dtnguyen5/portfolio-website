@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "@/styles/about.scss";
+import "@/styles/navbar.scss"
 
 const contacts = async () => {
 
@@ -7,29 +8,33 @@ const contacts = async () => {
   
   return(
 
-    <main className="Section1">
+    <main>
 
-      <div className="Profile-About-Page">
+      <div className="Section1">
 
-        <div className="Circle"></div>
+        <div className="Profile-About-Page">
 
-      </div>
-
-      <div className="About-Obsah">
-
-        <div className="Nadpis">
-  
-          <h1>Webový vývojář/designer</h1>
+          <div className="Circle"></div>
 
         </div>
 
-        <div className="About-text">
+        <div className="About-Obsah">
 
-          <h2>O mně</h2>
+          <div className="Nadpis">
 
-          <div className="Text-popis">
+            <h1>Webový vývojář/designer</h1>
 
-            <p>Jsem webový vývojář z Plzně, specializuji se na tvorbu moderních a funkčních webových stránek. Mám základní zkušenosti s HTML, CSS a JavaScriptem, ale nejvíce pracuji s Reactem, SCSS a TypeScriptem, které mi umožňují vytvářet dynamické, rychlé a škálovatelné weby. Mým cílem je vytvářet nejen vizuálně atraktivní, ale také přehledné, responzivní a snadno udržovatelné webové stránky. Sleduji nejnovější trendy ve vývoji a neustále se zdokonaluji, abych svým klientům nabídl moderní a efektivní řešení.</p>
+          </div>
+
+          <div className="About-text">
+
+            <h2>O mně</h2>
+
+            <div className="Text-popis">
+
+              <p>Jsem webový vývojář z Plzně, specializuji se na tvorbu moderních a funkčních webových stránek. Mám základní zkušenosti s HTML, CSS a JavaScriptem, ale nejvíce pracuji s Reactem, SCSS a TypeScriptem, které mi umožňují vytvářet dynamické, rychlé a škálovatelné weby. Mým cílem je vytvářet nejen vizuálně atraktivní, ale také přehledné, responzivní a snadno udržovatelné webové stránky. Sleduji nejnovější trendy ve vývoji a neustále se zdokonaluji, abych svým klientům nabídl moderní a efektivní řešení.</p>
+
+            </div>
 
           </div>
 
@@ -37,10 +42,17 @@ const contacts = async () => {
 
       </div>
 
+      <div className="Section2">
+
+        <div className="Nadpis_Section2">
+
+            <h2>Moje vývojářské prostředí</h2>
+
+        </div>
+
+      </div>
+
     </main>
-
-    
-
 
   );
 } 

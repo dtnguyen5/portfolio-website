@@ -1,6 +1,7 @@
 import "../styles/homepage.scss";
+import "../styles/navbar.scss"
 import Navbar from "@/components/navbar";
-
+import { MetadataProvider } from "@/providers/MetadataProvider";
 
 export const metadata = {
   title: "Nguyen Duy Tiep - Portfolio",
@@ -14,7 +15,7 @@ export const metadata = {
     siteName: "Nguyen Duy Tiep Portfolio",
     images: [
       {
-        url: "https://tvujweb.cz/og-image.jpg", // Dej sem svůj obrázek
+        url: "",
         width: 1200,
         height: 630,
         alt: "Nguyen Duy Tiep - Portfolio",
@@ -34,17 +35,21 @@ export default function RootLayout({
     <html lang="en">
       <body className="background">
 
-        <div className="main-content">
+        <MetadataProvider>
 
-          <div className="nav-content">
+          <div className="main-content">
 
-            <Navbar />
+            <div className="nav-content">
+
+              <Navbar />
+
+            </div>
+              
+              {children} 
 
           </div>
-            
-            {children} 
-
-        </div>
+        
+        </MetadataProvider>
 
       </body>
     </html>

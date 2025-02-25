@@ -1,4 +1,5 @@
 import "../styles/homepage.scss"
+import "../styles/navbar.scss"
 import Button from "../components/button"
 import Icons from "../components/buttonIcons"
 import Image from "next/image";
@@ -10,7 +11,7 @@ const Homepage = async () => {
   
   return(
 
-      <main>
+      <div className="Main">
 
         <div className="text-content-main">
 
@@ -51,7 +52,7 @@ const Homepage = async () => {
 
             <div className="Profile-place">
 
-              <div className="Profile-circle"></div>
+              <div className="Profile-picture"></div>
 
             </div>
 
@@ -63,11 +64,7 @@ const Homepage = async () => {
 
             <div className="Social-media-icons">
 
-              <div className="Icons">
-
                 <Icons label="" target=""/>
-
-              </div>
 
             </div>
 
@@ -75,7 +72,7 @@ const Homepage = async () => {
 
         </div>
 
-      </main>
+      </div>
 
   );
 } 

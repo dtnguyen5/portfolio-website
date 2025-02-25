@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "../styles/homepage.scss"
+import "../styles/navbar.scss"
 import useMediaQuery from "@/hooks/useMediaQuery";
 
 const Navbar = () => {
