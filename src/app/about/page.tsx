@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "@/styles/about.scss";
 import "@/styles/navbar.scss"
+import Tools from "@/components/tools";
 
 const contacts = async () => {
 
@@ -44,9 +45,15 @@ const contacts = async () => {
 
       <div className="Section2">
 
-        <div className="Nadpis_Section2">
+        <div className="Nadpis-Section2">
 
-            <h2>Moje vývojářské prostředí</h2>
+            <h2 className="Nadpis2">Moje vývojářské prostředí</h2>
+
+        </div>
+
+        <div className="Section2-Obsah">
+
+          <Tools/>
 
         </div>
 

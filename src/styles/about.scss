@@ -117,10 +117,11 @@ main{
 .Section2{
     display: flex;
     height: 100vh;
+    flex-direction: column;
 }
 
-.Nadpis_Section2{
-    height: 30vh;
+.Nadpis-Section2{
+    height: 20vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -128,6 +129,306 @@ main{
     position: relative;
     top: 3px;
     font-size: 1.2rem;
+
+    .Nadpis2{
+        margin-top: 90px;
+    }
+}
+
+.Section2-Obsah{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// <-----------------------------Tools----------------------------->
+
+.Section2-tools{
+    height: 72vh;
+    width: 91.09vw;
+    background-color: $seda;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+}
+
+.Section2-tools-1{
+    height: 72vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    // <-----------------------------VScode----------------------------->
+
+    .Section2-VScode{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        height: 8.8vh;
+        width: 28vw;
+        background-color: $cerna;
+        border-radius: 20px;
+        margin-left: 40px;
+
+        .Section-2-textp{
+            color: white;
+            text-align: center;
+            font-size: 1.9rem;
+            width: 90%;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+        }
+    }
+
+    .VScode-Icon{
+        height: 9vh;
+        width: 5.5vw;
+        background-color: $modra;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .VScode-Icon > img{
+        height: 7vh;
+    }
+
+    // <-----------------------------VScode----------------------------->
+
+    // <-----------------------------Figma----------------------------->
+
+    .Section2-Figma{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        height: 8.8vh;
+        width: 28vw;
+        background-color: $cerna;
+        border-radius: 20px;
+        margin-left: 40px;
+
+        .Section-2-textp{
+            color: white;
+            text-align: center;
+            font-size: 1.9rem;
+            width: 90%;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+        }
+    }
+
+    .Figma-Icon{
+        height: 9vh;
+        width: 5.5vw;
+        background-color: $modra;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .Figma-Icon img{
+        height: 7vh;
+    }
+
+     // <-----------------------------Figma----------------------------->
+
+     // <-----------------------------GitHub----------------------------->
+
+    .Section2-GitHub{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        height: 8.8vh;
+        width: 28vw;
+        background-color: $cerna;
+        border-radius: 20px;
+        margin-left: 40px;
+
+        .Section-2-textp{
+            color: white;
+            text-align: center;
+            font-size: 1.9rem;
+            width: 90%;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+        }
+    }
+
+    .GitHub-Icon{
+        height: 9vh;
+        width: 5.5vw;
+        background-color: $modra;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .GH-Icon{
+        height: 7vh;
+    }
+    
+    // <-----------------------------GitHub----------------------------->
+}
+
+.Section2-Decoration{
+    height: auto;
+    width: 21.09vw;
 }
 
 
+.Section2-tools-2{
+    height: 72vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+
+    // <-----------------------------ChatGPT----------------------------->
+
+    .Section2-ChatGPT{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        height: 8.8vh;
+        width: 28vw;
+        background-color: $cerna;
+        border-radius: 20px;
+        margin-left: 35px;
+
+        .Section-2-textp{
+            color: white;
+            text-align: center;
+            font-size: 1.9rem;
+            width: 90%;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+        }
+    }
+
+    .ChatGPT-Icon{
+        height: 9vh;
+        width: 5.5vw;
+        background-color: $modra;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .ChatGPT-Icon img{
+        height: 7.5vh;
+    }
+
+    // <-----------------------------ChatGPT----------------------------->
+
+    // <-----------------------------GIMP----------------------------->
+
+    .Section2-GIMP{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        height: 8.8vh;
+        width: 28vw;
+        background-color: $cerna;
+        border-radius: 20px;
+        margin-left: 35px;
+
+        .Section-2-textp{
+            color: white;
+            text-align: center;
+            font-size: 1.9rem;
+            width: 90%;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+        }
+    }
+
+    .GIMP-Icon{
+        height: 9vh;
+        width: 5.5vw;
+        background-color: $modra;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .GIMP-Icon img{
+        height: 7vh;
+    }
+
+    // <-----------------------------GIMP----------------------------->
+
+    // <-----------------------------FontAwesome----------------------------->
+
+    .Section2-FontAwesome{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        height: 8.8vh;
+        width: 28vw;
+        background-color: $cerna;
+        border-radius: 20px;
+        margin-left: 35px;
+
+        .Section-2-textp{
+            color: white;
+            text-align: center;
+            font-size: 1.9rem;
+            width: 90%;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 350;
+            font-style: normal;
+        }
+    }
+
+    .FontAwesome-Icon{
+        height: 9vh;
+        width: 5.5vw;
+        background-color: $modra;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .FA-Icon{
+        height: 5vh;
+    }
+
+    // <-----------------------------FontAwesome----------------------------->
+}
+
+// <-----------------------------Section2----------------------------->
