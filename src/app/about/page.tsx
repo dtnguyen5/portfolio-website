@@ -2,8 +2,9 @@ import Image from "next/image";
 import "@/styles/about.scss";
 import "@/styles/navbar.scss"
 import Tools from "@/components/tools";
+import Languages from"@/components/languages";
 
-const contacts = async () => {
+const about = async () => {
 
   await new Promise ((resolve) => setTimeout(resolve, 100));
   
@@ -59,8 +60,24 @@ const contacts = async () => {
 
       </div>
 
+      <div className="Section3">
+
+        <div className="Nadpis-Section3">
+
+          <h2 className="Nadpis3">Mé dovednosti</h2>
+
+        </div>
+
+        <div className="Section3-Obsah">
+
+          <Languages/>
+
+        </div>
+
+      </div>
+
     </main>
 
   );
 } 
-export default contacts;
+export default about;

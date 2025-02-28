@@ -1,11 +1,12 @@
 import React from "react";
 import "../styles/about.scss"
-import "../styles/navbar.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub} from "@fortawesome/free-brands-svg-icons"; 
 import { faIcons } from "@fortawesome/free-solid-svg-icons";
+import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
-const tools = () =>{
+const tools = () => {
 
     return(
 
@@ -65,11 +66,19 @@ const tools = () =>{
 
             <div className="Section2-Decoration">
 
-                <div></div>
+                <div id="Section2-Microchip">
 
-                <div></div>
+                 <FontAwesomeIcon icon={faMicrochip} className="Section2-Microchip"/>
 
-                <div></div>
+                </div>
+
+                <div className="Section2-Line"></div>
+
+                <div id="Section2-Code">
+
+                    <FontAwesomeIcon icon={faCode} className="Section2-Code"/>
+
+                </div>
 
             </div>
 

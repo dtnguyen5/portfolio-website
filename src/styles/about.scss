@@ -3,6 +3,8 @@
 $modra:rgba(4, 208, 239, 1);
 $seda:rgb(32, 31, 31, 1);
 $cerna: rgb(16, 16, 16, 1);
+$poppins: "Poppins", serif;
+$inter: "Inter", sans-serif;
 
 main{
     display: flex;
@@ -75,7 +77,7 @@ main{
 
 .Nadpis h1{
     color: $modra;
-    font-family: "Poppins", serif;
+    font-family: $poppins;
     font-weight: 600;
     font-style: normal;
     text-align: left;
@@ -88,7 +90,7 @@ main{
     h2{
         color: white;
         text-align: left;
-        font-family: "Poppins", serif;
+        font-family: $poppins;
         font-weight: 500;
         font-style: normal;
         margin-bottom: 5px;
@@ -98,7 +100,7 @@ main{
         color: white;
         text-align: left;
         font-size: 1.10rem;
-        font-family: "Poppins", serif;
+        font-family: $poppins;
         font-weight: 300;
         font-style: normal;
         width: 83%;
@@ -116,8 +118,20 @@ main{
 
 .Section2{
     display: flex;
-    height: 100vh;
+    height: 106vh;
     flex-direction: column;
+    position: relative;
+}
+
+.Section2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background: $modra;
+    filter: blur(10px);
 }
 
 .Nadpis-Section2{
@@ -127,7 +141,6 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 3px;
     font-size: 1.2rem;
 
     .Nadpis2{
@@ -146,7 +159,7 @@ main{
 // <-----------------------------Tools----------------------------->
 
 .Section2-tools{
-    height: 72vh;
+    min-height: 72vh;
     width: 91.09vw;
     background-color: $seda;
     display: flex;
@@ -181,7 +194,7 @@ main{
             text-align: center;
             font-size: 1.9rem;
             width: 90%;
-            font-family: "Inter", sans-serif;
+            font-family: $inter;
             font-optical-sizing: auto;
             font-weight: 350;
             font-style: normal;
@@ -223,7 +236,7 @@ main{
             text-align: center;
             font-size: 1.9rem;
             width: 90%;
-            font-family: "Inter", sans-serif;
+            font-family: $inter;
             font-optical-sizing: auto;
             font-weight: 350;
             font-style: normal;
@@ -265,7 +278,7 @@ main{
             text-align: center;
             font-size: 1.9rem;
             width: 90%;
-            font-family: "Inter", sans-serif;
+            font-family: $inter;
             font-optical-sizing: auto;
             font-weight: 350;
             font-style: normal;
@@ -322,7 +335,7 @@ main{
             text-align: center;
             font-size: 1.9rem;
             width: 90%;
-            font-family: "Inter", sans-serif;
+            font-family: $inter;
             font-optical-sizing: auto;
             font-weight: 350;
             font-style: normal;
@@ -364,7 +377,7 @@ main{
             text-align: center;
             font-size: 1.9rem;
             width: 90%;
-            font-family: "Inter", sans-serif;
+            font-family: $inter;
             font-optical-sizing: auto;
             font-weight: 350;
             font-style: normal;
@@ -406,7 +419,7 @@ main{
             text-align: center;
             font-size: 1.9rem;
             width: 90%;
-            font-family: "Inter", sans-serif;
+            font-family: $inter;
             font-optical-sizing: auto;
             font-weight: 350;
             font-style: normal;
@@ -431,4 +444,184 @@ main{
     // <-----------------------------FontAwesome----------------------------->
 }
 
+ // <-----------------------------Decoration----------------------------->
+
+.Section2-Decoration{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    // <-----------------------------Line----------------------------->
+
+ .Section2-Line{
+    height: 66vh;
+    width: 2px;
+    background-color: $modra;
+    transform: rotate(27deg);
+    position: relative;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 8px; 
+        height: 8px;
+        background-color: $modra;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    &::before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ }
+
+    // <-----------------------------Line----------------------------->
+
+    // <-----------------------------Microchip----------------------------->
+
+    #Section2-Microchip{
+        position: relative;
+        top: -150;
+    }
+
+    .Section2-Microchip{
+        height: 15.375vh;
+        color: $modra;
+    }
+
+    // <-----------------------------Microchip----------------------------->
+
+    // <-----------------------------Code----------------------------->
+
+    #Section2-Code{
+        position: relative;
+        top: 150px;
+    }
+
+    .Section2-Code{
+        height: 15.375vh;
+        color: $modra;
+    }
+
+    // <-----------------------------Code----------------------------->
+}
+
+ // <-----------------------------Decoration----------------------------->
+
 // <-----------------------------Section2----------------------------->
+
+
+
+// <-----------------------------Section3----------------------------->
+
+.Section3{
+    display: flex;
+    height: 109vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.Nadpis-Section3{
+    height: 20vh;
+    width: 100%;
+    text-align: start;
+    position: relative;
+    font-size: 1.2rem;
+
+    .Nadpis3{
+        margin-top: 90px;
+        width: 35%;
+    }
+}
+
+.Section3-Obsah{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Section3-languages{
+    min-height: 72vh;
+    width: 87vw;
+    background-color: $seda;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    .Section3-languages-obsah{
+        min-height: 63vh;
+        min-width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .Section3-HTML{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 9vh;
+            width: 81.72vw;
+            background-color: $cerna;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            .HTML-Text-Logo{
+                display: flex;
+                color: white;
+                font-family: $poppins;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 1.10rem;
+            }
+
+            .HTML-Percent{
+                height: 6.5vh;
+                width: 69.48vw;
+                display: flex;
+                align-items: center;
+                background-color: $seda;
+                border-radius: 15px;
+
+                #HTML-Percent{
+                    height: 6.5vh;
+                    width: 81.48%;
+                    background-color: $modra;
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    color: white;
+                }
+                
+                #HTML-Percent > p{
+                    margin-right: 30px;
+                    font-size: 1.5rem;
+                    font-family: $poppins;
+                    font-weight: 500;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+
+
+
+// <-----------------------------Section3----------------------------->
