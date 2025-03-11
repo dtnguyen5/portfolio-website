@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "@/styles/about.scss";
 import "@/styles/navbar.scss"
 import Tools from "@/components/tools";

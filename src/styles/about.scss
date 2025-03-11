@@ -563,62 +563,131 @@ main{
     .Section3-languages-obsah{
         min-height: 63vh;
         min-width: 80vw;
+        gap: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .Section3-HTML{
+        .Section3-HTML {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;  
             align-items: center;
             height: 9vh;
-            width: 81.72vw;
-            background-color: $cerna;
+            width: 80vw;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
-            border-bottom-right-radius: 10px;
             border-bottom-left-radius: 10px;
-
-            .HTML-Text-Logo{
-                display: flex;
-                color: white;
-                font-family: $poppins;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 1.10rem;
-            }
-
-            .HTML-Percent{
-                height: 6.5vh;
-                width: 69.48vw;
+            border-bottom-right-radius: 10px;
+            background-color: $cerna;
+            padding: 0px 30px; 
+        
+            .HTML-Text-Logo {
                 display: flex;
                 align-items: center;
+                gap: 18px; 
+                color: white;
+                font-family: $poppins;
+                font-size: 1.10rem;
+                margin-left: 15px;
+            }
+        
+            .HTML-Text-Logo > img {
+                height: 5vh;
+            }
+        
+            .HTML-Percent {
+                flex-grow: 1;
+                height: 6.6vh;
+                max-width: 65vw; 
                 background-color: $seda;
                 border-radius: 15px;
-
-                #HTML-Percent{
-                    height: 6.5vh;
-                    width: 81.48%;
+                display: flex;
+                align-items: center; 
+        
+                #HTML-Percent {
+                    height: 100%;
+                    width: calc(85% - 20px);
                     background-color: $modra;
                     border-top-left-radius: 15px;
                     border-bottom-left-radius: 15px;
+                    border-top-right-radius: 3px;
+                    border-top-right-radius: 3px;
                     display: flex;
                     justify-content: end;
                     align-items: center;
                     color: white;
+                    padding-right: 10px; 
                 }
-                
-                #HTML-Percent > p{
-                    margin-right: 30px;
+        
+                #HTML-Percent > p {
+                    margin-right: 10px; 
                     font-size: 1.5rem;
                     font-family: $poppins;
                     font-weight: 500;
-                    font-style: normal;
                 }
             }
         }
+
+        .Section3-CSS {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;  
+            align-items: center;
+            height: 9vh;
+            width: 80vw;
+            background-color: $cerna;
+            border-radius: 15px;
+            padding: 0px 30px; 
+        
+            .CSS-Text-Logo {
+                display: flex;
+                align-items: center;
+                gap: 18px; 
+                color: white;
+                font-family: $poppins;
+                font-size: 1.10rem;
+                margin-left: 15px;
+            }
+        
+            .CSS-Text-Logo > img {
+                height: 5vh;
+            }
+        
+            .CSS-Percent {
+                flex-grow: 1;
+                height: 6.6vh;
+                max-width: 65vw; 
+                background-color: $seda;
+                border-radius: 15px;
+                display: flex;
+                align-items: center; 
+        
+                #CSS-Percent {
+                    height: 100%;
+                    width: calc(80% - 20px);
+                    background-color: $modra;
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    border-top-right-radius: 3px;
+                    border-top-right-radius: 3px;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    color: white;
+                    padding-right: 10px; 
+                }
+        
+                #CSS-Percent > p {
+                    margin-right: 10px; 
+                    font-size: 1.5rem;
+                    font-family: $poppins;
+                    font-weight: 500;
+                }
+            }
+        }
+
     }
 }
 

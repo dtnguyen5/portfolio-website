@@ -14,7 +14,7 @@ const languages = () => {
 
                     <div className="HTML-Text-Logo">
 
-                        <img src="null" alt="" />
+                        <img src="/languages/htmlLogo.png" alt="" />
                         <p>HTML5</p>
 
                     </div>
@@ -25,6 +25,27 @@ const languages = () => {
 
                             <p>85%</p>
                             
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="Section3-CSS">
+
+                    <div className="CSS-Text-Logo">
+
+                        <img src="/languages/css.png" alt="" />
+                        <p>CSS3</p>
+
+                    </div>
+
+                    <div className="CSS-Percent">
+
+                        <div id="CSS-Percent">
+
+                            <p>80%</p>
+
                         </div>
 
                     </div>

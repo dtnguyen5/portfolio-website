@@ -5,8 +5,8 @@ import { faFacebook, faInstagram, faLinkedin, faSquareXTwitter } from "@fortawes
 import "../styles/homepage.scss";
 
 interface ButtonIconsProps {
-  label: React.ReactNode;
-  target: string;
+  label: React.ReactNode; 
+  target: string;        
 }
 
 const ButtonIcons: React.FC<ButtonIconsProps> = ({ label, target }) => {
@@ -14,32 +14,35 @@ const ButtonIcons: React.FC<ButtonIconsProps> = ({ label, target }) => {
 
     <div className="button-icons">
 
-        <a href="https://www.instagram.com/dtnguyen5_/" target="_blank" rel="noopener noreferrer">
+      <a href={target} target="_blank" rel="noopener noreferrer">
 
-          <FontAwesomeIcon icon={faInstagram} className="i-icon"/>
+        <FontAwesomeIcon icon={faInstagram} className="i-icon"/>
+        {label && <span>{label}</span>}  
 
-        </a>
+      </a>
 
-        <a href="https://x.com/honza_ipad" target="_blank" rel="noopener noreferrer">
+      <a href={target} target="_blank" rel="noopener noreferrer">
 
-          <FontAwesomeIcon icon={faSquareXTwitter} className="i-icon" />
+        <FontAwesomeIcon icon={faSquareXTwitter} className="i-icon" />
+        {label && <span>{label}</span>}
 
-        </a>
+      </a>
 
-        <a href="https://www.facebook.com/honza.nguyen.10297/" target="_blank" rel="noopener noreferrer">
+      <a href={target} target="_blank" rel="noopener noreferrer">
 
-          <FontAwesomeIcon icon={faFacebook} className="i-icon" />
+        <FontAwesomeIcon icon={faFacebook} className="i-icon" />
+        {label && <span>{label}</span>}
 
-        </a>
-        
-        <a href="https://www.linkedin.com/in/duy-tiep-nguyen-7325002a3/" target="_blank" rel="noopener noreferrer">
+      </a>
 
-          <FontAwesomeIcon icon={faLinkedin} className="i-icon" />
+      <a href={target} target="_blank" rel="noopener noreferrer">
 
-        </a>
+        <FontAwesomeIcon icon={faLinkedin} className="i-icon" />
+        {label && <span>{label}</span>}
+
+      </a>
 
     </div>
-
   );
 };
 
