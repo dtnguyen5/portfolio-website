@@ -527,10 +527,9 @@ main{
 
 .Section3{
     display: flex;
+    flex-direction: column;
     height: 109vh;
     width: 100%;
-    flex-direction: column;
-    position: relative;
 }
 
 .Nadpis-Section3{
@@ -542,159 +541,123 @@ main{
 
     .Nadpis3{
         margin-top: 90px;
-        width: 35%;
+        width: 32%;
     }
 }
 
-.Section3-Obsah{
-    height: 90vh;
+.Section3-obsah{
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.Section3-languages{
-    min-height: 72vh;
-    width: 87vw;
-    background-color: $seda;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
+    .Section3-languages-1{
+        height: 38vh;
+        width: 85vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-    .Section3-languages-obsah{
-        min-height: 63vh;
-        min-width: 80vw;
-        gap: 20px;
+    // <-----------------------------HTML----------------------------->
+
+    .Section3-HTML{
         display: flex;
         flex-direction: column;
+
+        .Section3-languages-HTML{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32vh;
+            width: 16vw;
+            border-radius: 18px;
+            border: 1.5px $modra solid;
+            background-color: $seda;
+         
+        }
+    }
+
+    .Section3-languages-HTML-text{
+        display: flex;
         justify-content: center;
         align-items: center;
-
-        .Section3-HTML {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;  
-            align-items: center;
-            height: 9vh;
-            width: 80vw;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            background-color: $cerna;
-            padding: 0px 30px; 
-        
-            .HTML-Text-Logo {
-                display: flex;
-                align-items: center;
-                gap: 18px; 
-                color: white;
-                font-family: $poppins;
-                font-size: 1.10rem;
-                margin-left: 15px;
-            }
-        
-            .HTML-Text-Logo > img {
-                height: 5vh;
-            }
-        
-            .HTML-Percent {
-                flex-grow: 1;
-                height: 6.6vh;
-                max-width: 65vw; 
-                background-color: $seda;
-                border-radius: 15px;
-                display: flex;
-                align-items: center; 
-        
-                #HTML-Percent {
-                    height: 100%;
-                    width: calc(85% - 20px);
-                    background-color: $modra;
-                    border-top-left-radius: 15px;
-                    border-bottom-left-radius: 15px;
-                    border-top-right-radius: 3px;
-                    border-top-right-radius: 3px;
-                    display: flex;
-                    justify-content: end;
-                    align-items: center;
-                    color: white;
-                    padding-right: 10px; 
-                }
-        
-                #HTML-Percent > p {
-                    margin-right: 10px; 
-                    font-size: 1.5rem;
-                    font-family: $poppins;
-                    font-weight: 500;
-                }
-            }
-        }
-
-        .Section3-CSS {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;  
-            align-items: center;
-            height: 9vh;
-            width: 80vw;
-            background-color: $cerna;
-            border-radius: 15px;
-            padding: 0px 30px; 
-        
-            .CSS-Text-Logo {
-                display: flex;
-                align-items: center;
-                gap: 18px; 
-                color: white;
-                font-family: $poppins;
-                font-size: 1.10rem;
-                margin-left: 15px;
-            }
-        
-            .CSS-Text-Logo > img {
-                height: 5vh;
-            }
-        
-            .CSS-Percent {
-                flex-grow: 1;
-                height: 6.6vh;
-                max-width: 65vw; 
-                background-color: $seda;
-                border-radius: 15px;
-                display: flex;
-                align-items: center; 
-        
-                #CSS-Percent {
-                    height: 100%;
-                    width: calc(80% - 20px);
-                    background-color: $modra;
-                    border-top-left-radius: 15px;
-                    border-bottom-left-radius: 15px;
-                    border-top-right-radius: 3px;
-                    border-top-right-radius: 3px;
-                    display: flex;
-                    justify-content: end;
-                    align-items: center;
-                    color: white;
-                    padding-right: 10px; 
-                }
-        
-                #CSS-Percent > p {
-                    margin-right: 10px; 
-                    font-size: 1.5rem;
-                    font-family: $poppins;
-                    font-weight: 500;
-                }
-            }
-        }
-
+        position: relative;
+        top: 30px;
+        color: $modra;
+        font-family: $poppins;
+        font-size: 1.4rem;
     }
-}
 
+    // <-----------------------------HTML----------------------------->
+
+
+    // <-----------------------------CSS----------------------------->
+
+    .Section3-CSS{
+        display: flex;
+        flex-direction: column;
+
+        .Section3-languages-CSS{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32vh;
+            width: 16vw;
+            border-radius: 18px;
+            border: 1.5px $modra solid;
+            background-color: $seda;
+         
+        }
+    }
+
+    .Section3-languages-CSS-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 30px;
+        color: $modra;
+        font-family: $poppins;
+        font-size: 1.4rem;
+    }
+
+    // <-----------------------------CSS----------------------------->
+
+    // <-----------------------------JavaScript----------------------------->
+
+    .Section3-JavaScript{
+        display: flex;
+        flex-direction: column;
+
+        .Section3-languages-JavaScript{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32vh;
+            width: 16vw;
+            border-radius: 18px;
+            border: 1.5px $modra solid;
+            background-color: $seda;
+         
+        }
+    }
+
+    .Section3-languages-JavaScript-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 30px;
+        color: $modra;
+        font-family: $poppins;
+        font-size: 1.4rem;
+    }
+
+    // <-----------------------------JavaScript----------------------------->
+
+}
 
 
 // <-----------------------------Section3----------------------------->

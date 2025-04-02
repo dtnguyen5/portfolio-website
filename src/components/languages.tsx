@@ -6,55 +6,71 @@ const languages = () => {
 
     return(
 
-        <div className="Section3-languages">
+        <div className="Section3">
 
-            <div className="Section3-languages-obsah">
+            <div className="Section3-obsah">
 
-                <div className="Section3-HTML">
+                <div className="Section3-languages-1">
 
-                    <div className="HTML-Text-Logo">
+                    <div className="Section3-HTML">
 
-                        <img src="/languages/htmlLogo.png" alt="" />
-                        <p>HTML5</p>
+                        <div className="Section3-languages-HTML">
+
+                            <img src="/languages-2/html5-original 1.png" alt="HTML" height={150} width={140}/>
+
+                        </div>
+
+                        <div className="Section3-languages-HTML-text">
+
+                            <h3>HTML5</h3>
+
+                        </div>
 
                     </div>
 
-                    <div className="HTML-Percent">
+                    <div className="Section3-CSS">
 
-                        <div id="HTML-Percent">
+                        <div className="Section3-languages-CSS">
 
-                            <p>85%</p>
-                            
+                            <img src="/languages-2/css3-original 1.png" alt="CSS" height={150} width={140} />
+
+                        </div>
+
+                        <div className="Section3-languages-CSS-text">
+
+                            <h3>CSS</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div className="Section3-JavaScript">
+
+                        <div className="Section3-languages-JavaScript">
+
+                            <img src="/languages-2/javascript-original 1.png" alt="JavaScript" height={150} width={150} />
+
+                        </div>
+
+                        <div className="Section3-languages-JavaScript-text">
+
+                            <h3>JavaScript</h3>
+
                         </div>
 
                     </div>
 
                 </div>
 
-                <div className="Section3-CSS">
+                <div>
 
-                    <div className="CSS-Text-Logo">
-
-                        <img src="/languages/css.png" alt="" />
-                        <p>CSS3</p>
-
-                    </div>
-
-                    <div className="CSS-Percent">
-
-                        <div id="CSS-Percent">
-
-                            <p>80%</p>
-
-                        </div>
-
-                    </div>
 
                 </div>
 
             </div>
 
         </div>
+
     );
 };
 export default languages;

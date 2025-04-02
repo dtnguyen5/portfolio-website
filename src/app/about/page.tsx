@@ -63,7 +63,7 @@ const about = async () => {
 
         <div className="Nadpis-Section3">
 
-          <h2 className="Nadpis3">Mé dovednosti</h2>
+          <h2 className="Nadpis3">Technologie</h2>
 
         </div>
 
