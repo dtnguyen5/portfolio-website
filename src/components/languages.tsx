@@ -48,7 +48,7 @@ const languages = () => {
 
                         <div className="Section3-languages-JavaScript">
 
-                            <img src="/languages-2/javascript-original 1.png" alt="JavaScript" height={150} width={150} />
+                            <img src="/languages-2/javascript-original 1.png" alt="JavaScript" height={130} width={130} />
 
                         </div>
 
@@ -60,10 +60,89 @@ const languages = () => {
 
                     </div>
 
+                    <div className="Section3-TypeScript">
+
+                        <div className="Section3-languages-TypeScript">
+
+                            <img src="/languages-2/typescript-original 1.png" alt="TypeScript" height={130} width={130} />
+
+                        </div>
+
+                        <div className="Section3-languages-TypeScript-text">
+
+                            <h3>TypeScript</h3>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div>
+                <div className="Section3-languages-2">
 
+                    <div className="Section3-React">
+
+                        <div className="Section3-languages-React">
+
+                            <img src="/languages-2/react-brands 1.png" alt="React" height={150} width={150} />
+
+                        </div>
+
+                        <div className="Section3-languages-React-text">
+
+                            <h3>React</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div className="Section3-SCSS">
+
+                        <div className="Section3-languages-SCSS">
+
+                            <img src="/languages-2/sass-original 1.png" alt="SCSS" height={170} width={170} />
+
+                        </div>
+
+                        <div className="Section3-languages-SCSS-text">
+
+                            <h3>SCSS</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div className="Section3-TailwindCSS">
+
+                        <div className="Section3-languages-TailwindCSS">
+
+                            <img src="/languages-2/tailwindcss-mark.d52e9897 1.png" alt="TailwindCSS" height={95} width={165} />
+
+                        </div>
+
+                        <div className="Section3-languages-TailwindCSS-text">
+
+                            <h3>TailwindCSS</h3>
+
+                        </div>
+
+                    </div>
+
+                    <div className="Section3-NextJs">
+
+                        <div className="Section3-languages-NextJs">
+
+                            <img src="/languages-2/nextjs-original 1.png" alt="Next.js"  />
+
+                        </div>
+
+                        <div className="Section3-languages-NextJs-text">
+
+                            <h3>Next.js</h3>
+
+                        </div>
+
+                    </div>
 
                 </div>
 

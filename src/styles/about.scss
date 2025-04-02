@@ -528,7 +528,7 @@ main{
 .Section3{
     display: flex;
     flex-direction: column;
-    height: 109vh;
+    height: 120vh;
     width: 100%;
 }
 
@@ -546,18 +546,20 @@ main{
 }
 
 .Section3-obsah{
-    height: 80vh;
+    height: 87vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     .Section3-languages-1{
-        height: 38vh;
+        height: 100%;
         width: 85vw;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+        gap: 110px;
     }
 
     // <-----------------------------HTML----------------------------->
@@ -570,8 +572,8 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 32vh;
-            width: 16vw;
+            height: 30vh;
+            width: 15.589vw;
             border-radius: 18px;
             border: 1.5px $modra solid;
             background-color: $seda;
@@ -603,8 +605,8 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 32vh;
-            width: 16vw;
+            height: 30vh;
+            width: 15.589vw;
             border-radius: 18px;
             border: 1.5px $modra solid;
             background-color: $seda;
@@ -619,7 +621,7 @@ main{
         position: relative;
         top: 30px;
         color: $modra;
-        font-family: $poppins;
+        font-family: $poppins;  
         font-size: 1.4rem;
     }
 
@@ -635,8 +637,8 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 32vh;
-            width: 16vw;
+            height: 30vh;
+            width: 15.589vw;
             border-radius: 18px;
             border: 1.5px $modra solid;
             background-color: $seda;
@@ -656,6 +658,177 @@ main{
     }
 
     // <-----------------------------JavaScript----------------------------->
+
+    // <-----------------------------TypeScript----------------------------->
+
+    .Section3-TypeScript{
+        display: flex;
+        flex-direction: column;
+
+        .Section3-languages-TypeScript{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            width: 15.589vw;
+            border-radius: 18px;
+            border: 1.5px $modra solid;
+            background-color: $seda;
+         
+        }
+    }
+
+    .Section3-languages-TypeScript-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 30px;
+        color: $modra;
+        font-family: $poppins;
+        font-size: 1.4rem;
+    }
+
+    // <-----------------------------TypeScript----------------------------->  
+    
+    
+    .Section3-languages-2{
+        height: 43vh;
+        width: 85vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 110px;
+    }
+
+    // <-----------------------------React----------------------------->
+
+    .Section3-React{
+        display: flex;
+        flex-direction: column;
+
+        .Section3-languages-React{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            width: 15.589vw;
+            border-radius: 18px;
+            border: 1.5px $modra solid;
+            background-color: $seda;
+         
+        }
+    }
+
+    .Section3-languages-React-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 30px;
+        color: $modra;
+        font-family: $poppins;
+        font-size: 1.4rem;
+    }
+
+    // <-----------------------------React----------------------------->
+
+    // <-----------------------------SCSS----------------------------->
+
+    .Section3-SCSS{
+        display: flex;
+        flex-direction: column;
+
+        .Section3-languages-SCSS{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            width: 15.589vw;
+            border-radius: 18px;
+            border: 1.5px $modra solid;
+            background-color: $seda;
+         
+        }
+    }
+
+    .Section3-languages-SCSS-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 30px;
+        color: $modra;
+        font-family: $poppins;
+        font-size: 1.4rem;
+    }
+
+    // <-----------------------------SCSS----------------------------->
+
+    // <-----------------------------TailwindCSS----------------------------->
+
+    .Section3-TailwindCSS{
+        display: flex;
+        flex-direction: column;
+
+        .Section3-languages-TailwindCSS{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            width: 15.589vw;
+            border-radius: 18px;
+            border: 1.5px $modra solid;
+            background-color: $seda;
+         
+        }
+    }
+
+    .Section3-languages-TailwindCSS-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 30px;
+        color: $modra;
+        font-family: $poppins;
+        font-size: 1.4rem;
+    }
+
+    // <-----------------------------TailwindCSS----------------------------->
+
+    // <-----------------------------NextJS----------------------------->
+
+    .Section3-NextJs{
+        display: flex;
+        flex-direction: column;
+
+        .Section3-languages-NextJs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            width: 15.589vw;
+            border-radius: 18px;
+            border: 1.5px $modra solid;
+            background-color: $seda;
+         
+        }
+    }
+
+    .Section3-languages-NextJs-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 30px;
+        color: $modra;
+        font-family: $poppins;
+        font-size: 1.4rem;
+    }
+
+    // <-----------------------------NextJS----------------------------->
 
 }
 
