@@ -5,6 +5,13 @@ $seda:rgb(32, 31, 31, 1);
 $cerna: rgb(16, 16, 16, 1);
 $poppins: "Poppins", serif;
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -149,9 +156,7 @@ h2 {
   .Profile-place{
     height: 40vh;
     width: 30vw;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    @include flex-center;
     margin-top: 52px;
 
 
@@ -168,9 +173,7 @@ h2 {
   .Profile-name{
     width: 30vw;
     height: 16vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
   }
 
   .Social-media-icons{
@@ -178,9 +181,7 @@ h2 {
     width: 23.17vw;
     background-color: $cerna;
     border-radius: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     .button-icons{
       width: 100%;

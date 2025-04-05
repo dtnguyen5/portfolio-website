@@ -6,6 +6,12 @@ $cerna: rgb(16, 16, 16, 1);
 $poppins: "Poppins", serif;
 $inter: "Inter", sans-serif;
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -41,9 +47,7 @@ main{
 .Profile-About-Page{
     height: 85vh;
     width: 43vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
 }
 
 .Circle{
@@ -62,10 +66,8 @@ main{
 .About-Obsah{
     height: 85vh;
     width: 57vw;
-    display: flex;
+    @include flex-center();
     flex-direction: column;
-    justify-content: center;    
-    align-items: center;
 }
 
 .Nadpis{
@@ -140,9 +142,7 @@ main{
 .Nadpis-Section2{
     height: 20vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     position: relative;
     font-size: 1.2rem;
 
@@ -154,9 +154,7 @@ main{
 .Section2-Obsah{
     height: 80vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
 }
 
 // <-----------------------------Tools----------------------------->
@@ -173,10 +171,8 @@ main{
 .Section2-tools-1{
     height: 72vh;
     width: 35vw;
-    display: flex;
+    @include flex-center();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 80px;
 
     // <-----------------------------VScode----------------------------->
@@ -208,9 +204,7 @@ main{
         height: 9vh;
         width: 5.5vw;
         background-color: $modra;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
@@ -250,9 +244,7 @@ main{
         height: 9vh;
         width: 5.5vw;
         background-color: $modra;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
@@ -292,9 +284,7 @@ main{
         height: 9vh;
         width: 5.5vw;
         background-color: $modra;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
@@ -391,9 +381,7 @@ main{
         height: 9vh;
         width: 5.5vw;
         background-color: $modra;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
@@ -433,9 +421,7 @@ main{
         height: 9vh;
         width: 5.5vw;
         background-color: $modra;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
@@ -528,12 +514,24 @@ main{
 .Section3{
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    height: auto;
     width: 100%;
+    position: relative;
+}
+
+.Section3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; 
+    background: $modra;
+    filter: blur(10px);
 }
 
 .Nadpis-Section3{
-    height: 20vh;
+    height: auto;
     width: 100%;
     text-align: start;
     position: relative;
@@ -541,24 +539,21 @@ main{
 
     .Nadpis3{
         margin-top: 90px;
+        margin-bottom: 35px;
         width: 32%;
     }
 }
 
 .Section3-obsah{
-    height: 87vh;
+    height: 90vh;
     width: 100%;
-    display: flex;
+    @include flex-center();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     .Section3-languages-1{
         height: 100%;
         width: 85vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         gap: 110px;
     }
 
@@ -569,9 +564,7 @@ main{
         flex-direction: column;
 
         .Section3-languages-HTML{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center();
             height: 30vh;
             width: 15.589vw;
             border-radius: 18px;
@@ -582,11 +575,9 @@ main{
     }
 
     .Section3-languages-HTML-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         position: relative;
-        top: 30px;
+        top: 35px;
         color: $modra;
         font-family: $poppins;
         font-size: 1.4rem;
@@ -602,9 +593,7 @@ main{
         flex-direction: column;
 
         .Section3-languages-CSS{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center();
             height: 30vh;
             width: 15.589vw;
             border-radius: 18px;
@@ -615,11 +604,9 @@ main{
     }
 
     .Section3-languages-CSS-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         position: relative;
-        top: 30px;
+        top: 35px;
         color: $modra;
         font-family: $poppins;  
         font-size: 1.4rem;
@@ -634,9 +621,7 @@ main{
         flex-direction: column;
 
         .Section3-languages-JavaScript{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center();
             height: 30vh;
             width: 15.589vw;
             border-radius: 18px;
@@ -647,11 +632,9 @@ main{
     }
 
     .Section3-languages-JavaScript-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         position: relative;
-        top: 30px;
+        top: 35px;
         color: $modra;
         font-family: $poppins;
         font-size: 1.4rem;
@@ -666,9 +649,7 @@ main{
         flex-direction: column;
 
         .Section3-languages-TypeScript{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center();
             height: 30vh;
             width: 15.589vw;
             border-radius: 18px;
@@ -679,11 +660,9 @@ main{
     }
 
     .Section3-languages-TypeScript-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         position: relative;
-        top: 30px;
+        top: 35px;
         color: $modra;
         font-family: $poppins;
         font-size: 1.4rem;
@@ -693,13 +672,13 @@ main{
     
     
     .Section3-languages-2{
-        height: 43vh;
+        height: 120vh;
         width: 85vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        
         gap: 110px;
+        margin-bottom: 10px;
     }
 
     // <-----------------------------React----------------------------->
@@ -709,9 +688,7 @@ main{
         flex-direction: column;
 
         .Section3-languages-React{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center();
             height: 30vh;
             width: 15.589vw;
             border-radius: 18px;
@@ -722,9 +699,7 @@ main{
     }
 
     .Section3-languages-React-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         position: relative;
         top: 30px;
         color: $modra;
@@ -741,9 +716,7 @@ main{
         flex-direction: column;
 
         .Section3-languages-SCSS{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center();
             height: 30vh;
             width: 15.589vw;
             border-radius: 18px;
@@ -754,9 +727,7 @@ main{
     }
 
     .Section3-languages-SCSS-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         position: relative;
         top: 30px;
         color: $modra;
@@ -773,9 +744,7 @@ main{
         flex-direction: column;
 
         .Section3-languages-TailwindCSS{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center();
             height: 30vh;
             width: 15.589vw;
             border-radius: 18px;
@@ -786,9 +755,7 @@ main{
     }
 
     .Section3-languages-TailwindCSS-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         position: relative;
         top: 30px;
         color: $modra;
@@ -805,9 +772,7 @@ main{
         flex-direction: column;
 
         .Section3-languages-NextJs{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center();
             height: 30vh;
             width: 15.589vw;
             border-radius: 18px;
@@ -818,9 +783,7 @@ main{
     }
 
     .Section3-languages-NextJs-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
         position: relative;
         top: 30px;
         color: $modra;
@@ -830,6 +793,17 @@ main{
 
     // <-----------------------------NextJS----------------------------->
 
+}
+// <-----------------------------Section3----------------------------->
+
+
+// <-----------------------------Section4----------------------------->
+
+.Section4{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
 }
 
 

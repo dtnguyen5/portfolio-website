@@ -31,10 +31,12 @@ const Navbar = () => {
         <ul>
 
           {navLinks.map((link) => (
+
             <li
               key={link.label}
               className={`link-item ${activeLink === link.href ? "active" : ""}`}
             >
+
               <Link href={link.href}>
 
                 <span className={`link__text ${activeLink === link.href ? "active" : ""}`}>
@@ -42,7 +44,9 @@ const Navbar = () => {
                 </span>
                 
               </Link>
+
               <span className="link__underline"></span>
+              
             </li>
           ))}
 

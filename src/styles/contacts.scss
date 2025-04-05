@@ -3,3 +3,9 @@
 $modra:rgba(4, 208, 239, 1);
 $seda:rgb(32, 31, 31, 1);
 $cerna: rgb(16, 16, 16, 1);
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -5,6 +5,12 @@ $seda:rgb(32, 31, 31, 1);
 $cerna: rgb(16, 16, 16, 1);
 $poppins: "Poppins", serif;
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-content{
     height: 15vh;
     width: 100%;
@@ -20,9 +26,7 @@ $poppins: "Poppins", serif;
     width: 50.26vw;
     height: 11vh;
     background-color: $seda;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     border-radius: 20px;
     z-index: 1000;
 }
