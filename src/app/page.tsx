@@ -1,7 +1,7 @@
 import "../styles/homepage.scss"
 import "../styles/navbar.scss"
-import Button from "../components/button"
-import Icons from "../components/buttonIcons"
+import Button from "@/components/Button"
+import Icons from "../components/ButtonIcons"
 import Image from "next/image";
 
 

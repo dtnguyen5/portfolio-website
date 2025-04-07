@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/about.scss"
 import Image from "next/image";
 
-const languages = () => {
+const Languages = () => {
 
     return(
 
@@ -152,4 +152,4 @@ const languages = () => {
 
     );
 };
-export default languages;
+export default Languages;

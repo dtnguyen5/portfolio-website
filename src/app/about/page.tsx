@@ -1,7 +1,8 @@
 import "@/styles/about.scss";
 import "@/styles/navbar.scss"
-import Tools from "@/components/tools";
-import Languages from"@/components/languages";
+import Tools from "@/components/Tools";
+import Languages from"@/components/Languages";
+import Vzdelani from "@/components/Vzdelani"
 
 const about = async () => {
 
@@ -77,7 +78,17 @@ const about = async () => {
 
       <div className="Section4">
 
+        <div className="Nadpis-Section4">
 
+          <h2 className="Nadpis4">Vzdělání</h2>
+
+        </div>
+
+        <div className="Section4-Obsah">
+
+          <Vzdelani/>
+
+        </div>
 
       </div>
 

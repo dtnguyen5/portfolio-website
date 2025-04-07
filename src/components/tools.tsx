@@ -6,7 +6,7 @@ import { faIcons } from "@fortawesome/free-solid-svg-icons";
 import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
-const tools = () => {
+const Tools = () => {
 
     return(
 
@@ -137,4 +137,4 @@ const tools = () => {
         </div>
     );
 };
-export default tools;
+export default Tools;

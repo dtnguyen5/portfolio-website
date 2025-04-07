@@ -1,6 +1,6 @@
 import "../styles/homepage.scss";
 import "../styles/navbar.scss"
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 import { MetadataProvider } from "@/providers/MetadataProvider";
 
 export const metadata = {

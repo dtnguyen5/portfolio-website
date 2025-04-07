@@ -802,9 +802,40 @@ main{
 .Section4{
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    position: relative;
+    height: 65vh;
     width: 100%;
 }
 
+.Nadpis-Section4{
+    height: 20vh;
+    width: 100%;
+    text-align: start;
+    position: relative;
+    font-size: 1.2rem;
+
+    .Nadpis4{
+        margin-top: 90px;
+        width: 28%;
+    }
+}
+
+.Section4-Obsah {
+    height: 80vh;
+    width: 53%;
+    @include flex-center();
+
+    .Vzdelavani-section {
+        @include flex-center();
+        height: 35vh;
+        width: 38vw;
+        border-radius: 15px;
+        background-color: $seda;
+    }
+}
+
+.Vzdelani-icon, .Vzdelani-icon-small{
+    display: none;
+}
 
 // <-----------------------------Section3----------------------------->
