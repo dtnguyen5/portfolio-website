@@ -821,21 +821,103 @@ main{
 }
 
 .Section4-Obsah {
-    height: 80vh;
-    width: 53%;
-    @include flex-center();
+    height: 45vh;
+    width: auto;
+    display: flex;
+    justify-content: start;  
+    align-items: center;
+    margin-left: 60px;
 
     .Vzdelavani-section {
-        @include flex-center();
-        height: 35vh;
-        width: 38vw;
+        height: 36vh;
+        width: 39vw;
         border-radius: 15px;
         background-color: $seda;
+        @include flex-center;
+      
+        .Vzdelani-obsah {
+          height: 30vh;
+          width: 30vw;
+          @include flex-center;
+          flex-direction: column;
+          margin-top: 35px;
+          gap: 28px;
+        }
+      
+        .Vzdelani-item {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          background-color: $cerna;
+          border-radius: 15px;
+          padding: 1.2rem 1.5rem;
+          width: 98%;
+          color: white;
+
+          
+        }
+
+        .Vzdelani-location{
+            @include flex-center;
+            flex-direction: row;
+            color: #fff;
+            gap: 5px;
+
+            .Vzdelani-text-container-small{
+                margin-top: 5px;
+                font-size: 0.87rem;
+            }
+
+            .Vzdelani-icon-container-small{
+                @include flex-center;
+                width: 23px;
+                height: 2rem;
+            }
+        }
     }
+
+    .Vzdelani-icon-container, .Vzdelani-icon-container-small {
+        @include flex-center;
+      }
+
+      .Vzdelani-icon-container {
+        width: 60px;
+        height: 2rem;
+        margin-right: 20px;
+        margin-left: 10px;
+      }
+      
+    .Vzdelani-icon {
+        font-size: 2rem;
+        color: $modra;
+        margin-right: 1rem;
+         
+    }
+
+    .Vzdelani-icon-small {
+        font-size: 1.3rem;
+        color: $modra;
+        margin-right: 0.5rem;  
+    }
+      
+    .Vzdelani-text-container {
+        font-size: 1.2rem;
+    }
+      
 }
 
-.Vzdelani-icon, .Vzdelani-icon-small{
-    display: none;
-}
+// <-----------------------------Section4----------------------------->
 
-// <-----------------------------Section3----------------------------->
+// <-----------------------------Section5----------------------------->
+
+.Section5{
+    @include flex-center();
+    height: 6vh;
+    width: 100%;
+    background-color: $seda;
+    font-size: 1rem;
+    color: white;
+    font-family: $poppins;
+    font-weight: 500;
+}
+// <-----------------------------Section5----------------------------->

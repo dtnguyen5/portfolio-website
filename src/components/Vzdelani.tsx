@@ -1,76 +1,87 @@
 import React from "react";
-import "../styles/about.scss"
+import "../styles/about.scss";
 import { faSchool, faGraduationCap, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// Typ pro jeden záznam vzdělání
-interface vzdelavaciItemy{
-    icon: "school" | "graduation" | "location";
-    title: string;
-    years?: string;
+interface VzdelavaciItem {
+  icon: "school" | "graduation" | "location";
+  title: string;
+  years?: string;
 }
 
-// Data
-const vzdelavaciData: vzdelavaciItemy[] = [
-    {
-        icon: "school",
-        title: "21.Zš Plzeň",
-        years: "2015/2023",
-    },
-    {
-        icon: "graduation",
-        title: "SŠ INFIS – IT obor",
-        years: "2023/ do současnosti",
-    },
-    {
-        icon: "location",
-        title: "Místo: Plzeň",
-    },
+const educationData: VzdelavaciItem[] = [
+  {
+    icon: "school",
+    title: "21.ZŠ Plzeň",
+    years: "2015/2023",
+  },
+  {
+    icon: "graduation",
+    title: "SŠ INFIS – IT obor",
+    years: "2023/ do současnosti",
+  },
 ];
 
+const locationItem: VzdelavaciItem = {
+  icon: "location",
+  title: "Místo: Plzeň",
+};
 
-// Funkce pro výběr správné ikony
-const getIcon = (type: vzdelavaciItemy["icon"]) => {
+const getIcon = (type: VzdelavaciItem["icon"]) => {
 
+    console.log("Ikona typu:", type);
     switch (type) {
         case "school":
-            return <FontAwesomeIcon icon={faSchool} className="Vzdelani-icon" />;
+        return <FontAwesomeIcon icon={faSchool} className="Vzdelani-icon" />;
         case "graduation":
-            return <FontAwesomeIcon icon={faGraduationCap} className="Vzdelani-icon" />;
+        return <FontAwesomeIcon icon={faGraduationCap} className="Vzdelani-icon" />;
         case "location":
-            return <FontAwesomeIcon icon={faLocationDot} className="Vzdelani-icon-small" />;   
+        return <FontAwesomeIcon icon={faLocationDot} className="Vzdelani-icon-small" />;
         default:
-            return null;
+        return null;
     }
-}
+};
 
 const Vzdelani: React.FC = () => {
 
-    return(
+  return (
 
-        <div className="Vzdelavani-section">
+    <div className="Section4-Obsah">
 
-            <div className="Vzdedani-obsah">
+         <div className="Vzdelavani-section">
 
-                {vzdelavaciData.map((item, index) => (
+            <div className="Vzdelani-obsah">
+
+                {educationData.map((item, index) => (
 
                     <div key={index} className="Vzdelani-item">
 
-                        <div className="Vzdelani-icon-container">
-                            {getIcon(item.icon)}
-                        </div>
+                        <div className="Vzdelani-icon-container">{getIcon(item.icon)}</div>
 
                         <span className="Vzdelani-text-container">
-                            {item.title} {item.years && ` - ${item.years}`}
+
+                            {item.title} {item.years && `- ${item.years}`}
+
                         </span>
 
-                    </div>     
-                    
+                    </div>
+
                 ))}
+
+                <div className="Vzdelani-location">
+
+                    <div className="Vzdelani-icon-container-small">{getIcon(locationItem.icon)}</div>
+
+                    <span className="Vzdelani-text-container-small">{locationItem.title}</span>
+
+                </div>
 
             </div>
 
         </div>
-    )
-}
+
+    </div>
+  );
+};
+
 export default Vzdelani;

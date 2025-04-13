@@ -3,6 +3,7 @@ import "@/styles/navbar.scss"
 import Tools from "@/components/Tools";
 import Languages from"@/components/Languages";
 import Vzdelani from "@/components/Vzdelani"
+import Footer from "@/components/Footer";
 
 const about = async () => {
 
@@ -89,6 +90,12 @@ const about = async () => {
           <Vzdelani/>
 
         </div>
+
+      </div>
+
+      <div className="Section5">
+
+        <Footer/>
 
       </div>
 
