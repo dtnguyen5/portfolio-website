@@ -58,7 +58,7 @@ h1 {
     font-style: normal;
 }
 
-h2 {
+.text-web  {
     color: $modra;
     font-size: 2.3em;
     text-align: center;
@@ -142,8 +142,8 @@ h2 {
 }
 
 .Profile{
-  min-height: 77vh;
-  min-width: 25vw;
+  min-height: 74vh;
+  width: 28.859vw;
   border-radius: 50px ;
   background-color: $seda;
   display: flex;
@@ -151,17 +151,17 @@ h2 {
   flex-direction: column;
   position: relative;
   left: 35px;
-  top: 25px;
+  top: 35px;
 
   .Profile-place{
-    height: 40vh;
+    height: 38vh;
     width: 30vw;
     @include flex-center;
     margin-top: 52px;
 
 
     .Profile-picture{
-      height: 38vh;
+      height: 36vh;
       width: 19vw;
       border-radius: 10%;
       background-color: $cerna;
@@ -172,22 +172,33 @@ h2 {
 
   .Profile-name{
     width: 30vw;
-    height: 16vh;
+    height: 14vh;
     @include flex-center;
   }
 
+  .Profile-name > h2{
+    color: $modra;
+    font-size: 2.1rem;
+    text-align: center;
+    width: 70%;
+    font-family: $poppins;
+    font-weight: 600;
+    position: relative;
+    top: -7px;
+  }
+
   .Social-media-icons{
-    height: 9.5vh;
-    width: 23.17vw;
+    height: 9.498vh;
+    width: 22vw;
     background-color: $cerna;
-    border-radius: 28px;
+    border-radius: 25px;
     @include flex-center;
 
     .button-icons{
       width: 100%;
       display: flex;
       justify-content: center;
-      gap: 25px;  
+      gap: 18px;  
     }
 
     .button-icon{
@@ -197,7 +208,7 @@ h2 {
     }
 
     .i-icon{
-      height: 5.456vh;
+      height: 5vh;
       width: 4vw;
       color: white;
       transition: ease-out 300ms ;

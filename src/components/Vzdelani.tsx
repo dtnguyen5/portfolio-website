@@ -12,7 +12,7 @@ interface VzdelavaciItem {
 const educationData: VzdelavaciItem[] = [
   {
     icon: "school",
-    title: "21.ZŠ Plzeň",
+    title: "21. ZŠ Plzeň",
     years: "2015/2023",
   },
   {

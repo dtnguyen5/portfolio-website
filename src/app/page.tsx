@@ -19,7 +19,7 @@ const Homepage = async () => {
 
             <h1>Zdravím tady Honza!</h1>
 
-            <h2>Web developer</h2>
+            <h2 className="text-web">Web developer</h2>
 
             <div className="content-obsah">
 

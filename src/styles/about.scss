@@ -19,8 +19,19 @@ main{
     width: 100%;
 }
 
-// <-----------------------------Section1----------------------------->
+h2{
+    color: $modra;
+    font-size: 2.3em;
+    text-align: center;
+    width: 70%;
+    font-family: $poppins;
+    font-weight: 600;
+    position: relative;
+    top: -7px;
+}
 
+
+// <-----------------------------Section1----------------------------->
 
 .Section1 {
     background-color: $cerna;
@@ -352,9 +363,9 @@ main{
 
     // <-----------------------------ChatGPT----------------------------->
 
-    // <-----------------------------GIMP----------------------------->
+    // <-----------------------------Framer----------------------------->
 
-    .Section2-GIMP{
+    .Section2-Framer{
         display: flex;
         flex-direction: row;
         justify-content: start;
@@ -377,7 +388,7 @@ main{
         }
     }
 
-    .GIMP-Icon{
+    .Framer-Icon{
         height: 9vh;
         width: 5.5vw;
         background-color: $modra;
@@ -386,15 +397,15 @@ main{
         border-bottom-left-radius: 20px;
     }
 
-    .GIMP-Icon img{
+    .Framer-Icon img{
         height: 7vh;
     }
 
-    // <-----------------------------GIMP----------------------------->
+    // <-----------------------------Framer----------------------------->
 
-    // <-----------------------------FontAwesome----------------------------->
+    // <-----------------------------Blender----------------------------->
 
-    .Section2-FontAwesome{
+    .Section2-Blender{
         display: flex;
         flex-direction: row;
         justify-content: start;
@@ -417,7 +428,7 @@ main{
         }
     }
 
-    .FontAwesome-Icon{
+    .Blender-Icon{
         height: 9vh;
         width: 5.5vw;
         background-color: $modra;
@@ -426,51 +437,52 @@ main{
         border-bottom-left-radius: 20px;
     }
 
-    .FA-Icon{
-        height: 5vh;
+    .Blender-Icon img{
+        height: 7vh;
     }
 
-    // <-----------------------------FontAwesome----------------------------->
+
+    // <-----------------------------Blender----------------------------->
 }
 
  // <-----------------------------Decoration----------------------------->
 
-.Section2-Decoration{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    .Section2-Decoration{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
-    // <-----------------------------Line----------------------------->
+        // <-----------------------------Line----------------------------->
 
- .Section2-Line{
-    height: 66vh;
-    width: 2px;
-    background-color: $modra;
-    transform: rotate(27deg);
-    position: relative;
-
-    &::before,
-    &::after {
-        content: "";
-        width: 8px; 
-        height: 8px;
+    .Section2-Line{
+        height: 66vh;
+        width: 2px;
         background-color: $modra;
-        border-radius: 50%;
-        position: absolute;
-    }
+        transform: rotate(27deg);
+        position: relative;
 
-    &::before {
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+        &::before,
+        &::after {
+            content: "";
+            width: 8px; 
+            height: 8px;
+            background-color: $modra;
+            border-radius: 50%;
+            position: absolute;
+        }
 
-    &::after {
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        &::before {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
- }
 
     // <-----------------------------Line----------------------------->
 
@@ -901,12 +913,15 @@ main{
     }
       
     .Vzdelani-text-container {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        font-family: $poppins;
+        font-weight: 380;
     }
       
 }
 
 // <-----------------------------Section4----------------------------->
+
 
 // <-----------------------------Section5----------------------------->
 

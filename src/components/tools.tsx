@@ -100,33 +100,33 @@ const Tools = () => {
 
                 </div>
 
-                <div className="Section2-GIMP">
+                <div className="Section2-Framer">
 
-                    <div className="GIMP-Icon">
+                    <div className="Framer-Icon">
 
-                        <img src="/tools/gimp.png" alt="" />
+                        <img src="/tools/framer-original.svg" alt="" />
 
                     </div>
 
                     <div className="Section-2-textp">
 
-                        <p>GIMP</p>
+                        <p>Framer</p>
 
                     </div>
 
                 </div>
 
-                <div className="Section2-FontAwesome">
+                <div className="Section2-Blender">
 
-                    <div className="FontAwesome-Icon">
+                    <div className="Blender-Icon">
 
-                     <FontAwesomeIcon icon={faIcons} className="FA-Icon"/>
+                        <img src="/tools/blender-original.svg" alt="" />
 
                     </div>
 
                     <div className="Section-2-textp">
 
-                        <p>FontAwesome</p>
+                        <p>Blender</p>
 
                     </div>
 
