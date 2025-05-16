@@ -3,9 +3,318 @@
 $modra:rgba(4, 208, 239, 1);
 $seda:rgb(32, 31, 31, 1);
 $cerna: rgb(16, 16, 16, 1);
+$poppins: "Poppins", serif;
+$inter: "Inter", sans-serif;
 
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main-content{
+    height: 90vh;
+    width: 100%;
+
+    .web-text{
+        height: 10vh;
+        width: 100%;
+        @include flex-center;
+
+        #web-text-content{
+            color: $modra;
+            font-family: $inter;
+            font-weight: 600;
+            font-size: 3.2rem;
+        }
+    }
+
+    .main-content-obsah{
+        height: 75vh;
+        width: 100%;
+        @include flex-center;
+    }
+
+    .web-prices-box1-box2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 260px;
+        width: 100%;
+        
+    }
+
+    // <-----------------------------Box1----------------------------->
+    .web-prices-box1{
+        height: 71vh;
+        width: 24vw;
+        @include flex-center;
+        background-color: $seda;
+        border-radius: 20px;
+        border: 1.5px dotted $modra;
+
+        .web-prices-box1-text-and-content{
+            height: 63vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+           
+            
+
+            .web-prices-box1-text-inside{
+                height: 8.85vh;
+                width: 18.65vw;
+                background-color: $cerna;
+                border-radius: 20px;
+                @include flex-center;
+
+                #web-box1-text{
+                    color: $modra;
+                    font-size: 2.025rem;
+                    font-family: $inter;
+                    font-weight: 580;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .web-prices-box1-content{
+                height: 40vh;
+                width: 100%;
+                @include flex-center;
+                flex-direction: column;
+
+                .web-prices-box1-content-prize{
+                    height: 10vh;
+                    width: 100%;
+                    @include flex-center;
+                    margin: 10px 0px 5px 0px;
+
+                    .web-prices{
+                        font-size: 2.2rem;
+                        color: #ffffff;
+                        font-family: $inter;
+                        font-weight: 600;
+                    }
+
+                    .prices-index{
+                        font-size: 1rem;
+                        position: relative;
+                        top: -0.4rem; 
+                        left: 3px;
+                    }
+
+                    .web-prices-crown{
+                        font-size: 2.2rem;
+                        color: #ffffff;
+                        font-family: $inter;
+                        font-weight: 600;
+                        position: relative;
+                        left: 8px;
+                    }
+                }
+
+                .web-prices-box1-content-obsah{
+                    height: 28vh;
+                    width: 85%;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    gap: 18px;
+                   
+
+                    .web-prices-box1-content-obsah-text{
+                        display: flex;
+                        flex-direction: row;
+
+                     
+                        
+                        .prices-text{
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            font-size: 1.1rem;
+                            color: #ffffff;
+                            font-family: $inter;
+                            font-weight: 520;
+
+                        }
+
+                        #prices-text{
+                            width: 74%;
+                        }
+                    
+                    }
+
+                }
+            }
+
+            .web-prices-box1-content-button{
+                height: 13vh;
+                width: 85%;
+                @include flex-center;
+                position: relative;
+                top: 30px;
+                
+
+                .web-prices-box1-content-button-inside button{
+                    height: 7vh;
+                    width: 17vw;
+                    background-color: $cerna;
+                    color: #ffffff;
+                    border-radius: 15px;
+                    border: $cerna;
+                    cursor: pointer;
+                    font-family: $inter;
+                    font-size: 1.15rem;
+                    font-weight: 500;
+                    transition: background-color 0.5s ease;
+
+                    &:hover{
+                        background-color: $modra;
+                        
+                    }
+                }
+            }
+        }
+    }
+    // <-----------------------------Box1----------------------------->
+
+    // <-----------------------------Box2----------------------------->
+    .web-prices-box2{
+        height: 70vh;
+        width: 24vw;
+        @include flex-center;
+        background-color: $seda;
+        border-radius: 20px;
+        border: 1.5px dotted $modra;
+
+        .web-prices-box2-text-and-content{
+            height: 63vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+            
+
+            .web-prices-box2-text-inside{
+                height: 8.85vh;
+                width: 18.65vw;
+                background-color: $cerna;
+                border-radius: 20px;
+                @include flex-center;
+
+                #web-box1-text{
+                    color: $modra;
+                    font-size: 2.025rem;
+                    font-family: $inter;
+                    font-weight: 580;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .web-prices-box2-content{
+                height: 40vh;
+                width: 100%;
+                @include flex-center;
+                flex-direction: column;
+
+                .web-prices-box2-content-prize{
+                    height: 10vh;
+                    width: 100%;
+                    @include flex-center;
+                    margin: 10px 0px 5px 0px;
+
+                    .web-prices{
+                        font-size: 2.2rem;
+                        color: #ffffff;
+                        font-family: $inter;
+                        font-weight: 600;
+                    }
+
+                    .prices-index{
+                        font-size: 1rem;
+                        position: relative;
+                        top: -0.4rem; 
+                        left: 3px;
+                    }
+
+                    .web-prices-crown{
+                        font-size: 2.2rem;
+                        color: #ffffff;
+                        font-family: $inter;
+                        font-weight: 600;
+                        position: relative;
+                        left: 8px;
+                    }
+                }
+
+                .web-prices-box2-content-obsah{
+                    height: 28vh;
+                    width: 85%;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    gap: 18px;
+                   
+
+                    .web-prices-box2-content-obsah-text{
+                        display: flex;
+                        flex-direction: row;
+
+                     
+                        
+                        .prices-text{
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+                            font-size: 1.1rem;
+                            color: #ffffff;
+                            font-family: $inter;
+                            font-weight: 520;
+
+                        }
+
+                        #prices-text{
+                            width: 74%;
+                        }
+                    
+                    }
+
+                }
+            }
+
+            .web-prices-box2-content-button{
+                height: 13vh;
+                width: 85%;
+                @include flex-center;
+                position: relative;
+                top: 30px;
+                
+
+                .web-prices-box2-content-button-inside button{
+                    height: 7vh;
+                    width: 17vw;
+                    background-color: $cerna;
+                    color: #ffffff;
+                    border-radius: 15px;
+                    border: $cerna;
+                    cursor: pointer;
+                    font-family: $inter;
+                    font-size: 1.15rem;
+                    font-weight: 500;
+                    transition: background-color 0.5s ease;
+
+                    &:hover{
+                        background-color: $modra;
+                        
+                    }
+                }
+            }
+        }
+    }
+    // <-----------------------------Box2----------------------------->
 }

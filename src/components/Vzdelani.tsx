@@ -42,7 +42,7 @@ const getIcon = (type: VzdelavaciItem["icon"]) => {
     }
 };
 
-const Vzdelani: React.FC = () => {
+const Vzdelani = () => {
 
   return (
 
